@@ -1,0 +1,120 @@
+
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+a:hover {
+  color: black;
+}
+
+.page-content {
+  margin-top: 95px; /* bump down for fixed header */
+  background: white;
+  padding-top: 30px;
+}
+
+.page-content nav {
+  position: absolute;
+  left: -200px;
+}
+
+.page-content section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.chapter img {
+  max-width: 100%;
+}
+
+.page-content,
+.page-content h1, .page-content h2, .page-content h3 {
+  color: black;
+}
+
+.chapter-author {
+  font-style: italic;
+}
+
+.table-of-contents {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.table-of-contents h1 {
+  margin-bottom: 30px;
+}
+.table-of-contents h2 {
+  font-size: 18pt;
+  line-height: 32px;
+  font-style: italic;
+}
+.table-of-contents ul {
+  list-style-type: none;
+}
+.table-of-contents ul li {
+  margin-bottom: 10px;
+  vertical-align: middle;
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  padding-bottom: 6px;
+  line-height: 20px;
+}
+.table-of-contents ul li a::before {
+  height: 20px;
+  width: 20px;
+  display: block;
+  float: left;
+  color: #fff;
+  padding: 5px;
+  margin-right: 5px;
+  margin: -7px 7px 0 0;
+  line-height: 21px;
+  content: " ";
+  border: 2px #e22866 solid;
+  border-radius: 100%;
+  font-size: 16px;
+}
+.table-of-contents ul li a.part-1::before {
+  background: #e22866;
+  font-weight: bold;
+  text-align: center;
+  content: attr(data-num);
+}
+
+
+.breadcrumb {
+  font-style: italic;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.breadcrumb a::after {
+  content: " >";
+}
+.breadcrumb a:last-child::after {
+  content: "";
+}
+
+
+.chapter-subsection-list {
+  padding: 2em 0;
+}
+
+
+.page-content .book {
+  padding-bottom: 3em;
+  text-align: center;
+}
+.page-content .book .cover {
+  border: 1px #ccc solid;
+  max-width: 300px;
+}
+
